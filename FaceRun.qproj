@@ -1,0 +1,5 @@
+Project:
+  Name: FaceRun
+  StartScene: Scenes/Physics2D.quelos
+  AssetDirectory: Assets
+  ScriptModulePath: Scripts/Binaries/FaceRun.dll

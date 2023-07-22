@@ -1,0 +1,188 @@
+Scene: Physics2D
+Entites:
+  - EntityID: 3181775127062147358
+    TagComponent:
+      Tag: Goal
+    TransformComponent:
+      Position: [25.0582695, -1.52609301, 0]
+      Rotation: [0, 0, 0]
+      Scale: [3, 3, 1]
+    CircleRendererComponent:
+      Color: [0.372259736, 0.654957712, 0.736654818, 0.843137264]
+      Thickness: 1
+      Fade: 0.00999999978
+  - EntityID: 11908956828186690126
+    TagComponent:
+      Tag: Camera
+    TransformComponent:
+      Position: [9.97132492, -11.0960693, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    CameraComponent:
+      Camera:
+        ProjectionType: 0
+        PresVerticalFOV: 0.785398185
+        PresNearClip: 0.00999999978
+        PresFarClip: 1000
+        OrthoSize: 30
+        OrthoNearClip: -1
+        OrthoFarClip: 1000
+      Primary: true
+      TargetID: 1048575
+      FixedAspectRatio: false
+    ScriptComponent:
+      Name: Sandbox.CameraController
+      ScriptFields:
+        - Name: DistanceFromPlayer
+          Type: Float
+          Data: 10
+        - Name: SnappingSpeed
+          Type: Float
+          Data: 2
+  - EntityID: 10133931684058251332
+    TagComponent:
+      Tag: Ground
+    TransformComponent:
+      Position: [16.0985203, -11.500164, 0]
+      Rotation: [0, 0, 0.670206428]
+      Scale: [18.3000088, 0.999999583, 1]
+    SpriteRendererComponent:
+      Color: [0.0488365032, 0.972972989, 0.213860914, 1]
+      TilingFactor: 1
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: true
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 0.100000001
+      Restitution: 0
+      RestitutionThreshold: 0.5
+  - EntityID: 2933066601743374701
+    TagComponent:
+      Tag: Ground__
+    TransformComponent:
+      Position: [33.1208267, -7.14632177, 0]
+      Rotation: [0, 0, 1.57079637]
+      Scale: [25, 0.999999762, 0.999922216]
+    SpriteRendererComponent:
+      Color: [0.869498253, 0.972972989, 0.0488365032, 1]
+      TilingFactor: 1
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: true
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 1
+      Restitution: 0
+      RestitutionThreshold: 0.5
+  - EntityID: 3540253370157868926
+    TagComponent:
+      Tag: Player
+    TransformComponent:
+      Position: [-0.197205365, 2.44527221, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1.14700556, 1, 1]
+    ScriptComponent:
+      Name: Sandbox.Player
+      ScriptFields:
+        - Name: Speed
+          Type: Float
+          Data: 50
+    SpriteRendererComponent:
+      Color: [1, 1, 1, 1]
+      TexturePath: Textures\pngkey.com-demon-face-png-1269463.png
+      TilingFactor: 1
+    Rigidbody2DComponent:
+      BodyType: Dynamic
+      FixedRotation: false
+    CircleCollider2DComponent:
+      Offset: [0, -0.0500000007]
+      Radius: 0.435000002
+      Density: 1
+      Friction: 0.5
+      Restitution: 0.25
+      RestitutionThreshold: 0.5
+  - EntityID: 1723027123035249762
+    TagComponent:
+      Tag: Ground
+    TransformComponent:
+      Position: [-0.709881306, -6.27406883, 0]
+      Rotation: [0, 0, -0.460766882]
+      Scale: [18.3000088, 0.999999702, 1]
+    SpriteRendererComponent:
+      Color: [0.0488365032, 0.972972989, 0.213860914, 1]
+      TilingFactor: 1
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: true
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 0.100000001
+      Restitution: 0
+      RestitutionThreshold: 0.5
+  - EntityID: 8038408498171641361
+    TagComponent:
+      Tag: Ground_
+    TransformComponent:
+      Position: [11.1299906, 4.92000008, 0]
+      Rotation: [0, 0, 0]
+      Scale: [45, 0.999999762, 1]
+    SpriteRendererComponent:
+      Color: [0.869498253, 0.972972989, 0.0488365032, 1]
+      TilingFactor: 1
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: true
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 1
+      Restitution: 0
+      RestitutionThreshold: 0.5
+  - EntityID: 2147618389855510621
+    TagComponent:
+      Tag: Ground
+    TransformComponent:
+      Position: [11.1299906, -20.0932026, 0]
+      Rotation: [0, 0, 0]
+      Scale: [45.5, 0.999999762, 1]
+    SpriteRendererComponent:
+      Color: [0.869498253, 0.972972989, 0.0488365032, 1]
+      TilingFactor: 1
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: true
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 1
+      Restitution: 0
+      RestitutionThreshold: 0.5
+  - EntityID: 2722936715514737191
+    TagComponent:
+      Tag: Ground_
+    TransformComponent:
+      Position: [-11.1140575, -7.09557915, 0]
+      Rotation: [0, 0, 1.57079637]
+      Scale: [25, 0.999999762, 0.999945819]
+    SpriteRendererComponent:
+      Color: [0.869498253, 0.972972989, 0.0488365032, 1]
+      TilingFactor: 1
+    Rigidbody2DComponent:
+      BodyType: Static
+      FixedRotation: true
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      Size: [0.5, 0.5]
+      Density: 1
+      Friction: 1
+      Restitution: 0
+      RestitutionThreshold: 0.5
